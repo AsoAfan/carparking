@@ -1,14 +1,14 @@
 package org.example;
 
-import org.example.enums.PRIORITY;
-import org.example.models.*;
+import org.example.app.enums.PRIORITY;
+import org.example.app.models.*;
 
 import java.io.*;
-import java.net.*;
-import java.text.SimpleDateFormat;
-import java.util.Scanner;
-import java.util.Date;
+import java.net.Socket;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
 
 
 public class ClientSide {
@@ -23,7 +23,7 @@ public class ClientSide {
     }
 
     public void register(String username, String email, String phoneNumber, String password, String plateNumber,
-            String parkingLotName, String spotNumber, String entryTime, String exitTime, double fee)
+                         String parkingLotName, String spotNumber, String entryTime, String exitTime, double fee)
             throws IOException {
 
         // Send user details to the server

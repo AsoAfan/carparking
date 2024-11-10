@@ -1,5 +1,5 @@
 // Source code is decompiled from a .class file using FernFlower decompiler.
-package org.example.models;
+package org.example.app.models;
 
 public class SpotManager {
     public SpotManager() {

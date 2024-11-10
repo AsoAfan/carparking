@@ -1,4 +1,4 @@
-package org.example.enums;
+package org.example.app.enums;
 
 public enum PRIORITY {
 

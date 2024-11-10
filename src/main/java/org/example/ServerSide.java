@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.app.Database;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -9,6 +11,7 @@ public class ServerSide {
 
     public ServerSide(int port) throws IOException {
         serverSocket = new ServerSocket(port);
+        Database.getConnection();
         System.out.println("Server started on port " + port);
     }
 

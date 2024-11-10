@@ -1,12 +1,16 @@
 package org.example;
 
-import org.example.models.*;
-import java.io.*;
+import org.example.app.enums.PRIORITY;
+import org.example.app.models.*;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-import java.text.SimpleDateFormat;
-import org.example.enums.PRIORITY;
 
 public class Main {
 
